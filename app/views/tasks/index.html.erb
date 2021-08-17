@@ -2,8 +2,10 @@
 <% @tasks.each do |task| %>
 <li>
 <%= link_to task.title, task_path(task) %>
-<%= link_to "🗑️", task_path(task), method: :delete, data: { confirm: "Tem certeza champs?" } %>
+<%= link_to "--🗑️", task_path(task), method: :delete, data: { confirm: "Tem certeza champs?" } %>
 </li>
 <% end %>
+
+<p></p>
 
 <%= link_to '+ Add a new task', tasks_new_path%>

@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   post 'tasks', to: 'tasks#create'
   # mostrar um form de edit
   get 'tasks/:id/edit', to: 'tasks#edit', as: :edit
-   # atualizar o task no db
+  # atualizar o task no db
   patch 'tasks/:id', to: 'tasks#update'
-   # deletar um task
-  delete "tasks/:id", to: "tasks#destroy"
+  # deletar um task
+  delete 'tasks/:id', to: 'tasks#destroy'
 end
